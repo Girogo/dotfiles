@@ -38,9 +38,19 @@ z lets you quickly navigate the file system in PowerShell based on your cd comma
 
 [MesloLGS NF](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Meslo) from [Nerd Fonts](https://www.nerdfonts.com/)
 
-# :scroll:[LazyGit](https://github.com/jesseduffield/lazygit)
+# :pill:CLI Tools
+
+### [LazyGit](https://github.com/jesseduffield/lazygit)
 
 A simple terminal UI for git commands
+
+### [tldr](https://github.com/tldr-pages/tldr)
+
+Collection of community-maintained help pages for command-line tools, that aims to be a simpler, more approachable complement to traditional man pages.
+
+### [jq](https://github.com/jqlang/jq)
+
+Lightweight and flexible command-line JSON processor akin to sed,awk,grep, and friends for JSON data. Allows you to easily slice, filter, map, and transform structured data.
 
 # :abcd:Fonts
 

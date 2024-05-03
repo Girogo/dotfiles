@@ -16,6 +16,8 @@ function Main {
   InstallChocolatey
   InstallGit
   InstallLazyGit
+  InstallTldr
+  InstallJq
   InstallOhMyPosh
   InstallPoshGit
   InstallTerminalIcons
@@ -111,6 +113,37 @@ function InstallLazyGit {
     if (-not (PromptContinue($currentProgram))) { exit }
   }
 }
+
+# Install tldr
+function InstallTldr {
+  $currentProgram = "tldr"
+  Write-Host "Installing 'tldr'...'" -ForegroundColor Cyan
+  try
+  {
+    choco install tldr -y | Out-Null
+    Write-Host "tldr installed correctly" -ForegroundColor Green
+  }
+  catch 
+  {
+    if (-not (PromptContinue($currentProgram))) { exit }
+  }
+}
+
+# Install jq
+function InstallJq {
+  $currentProgram = "jq"
+  Write-Host "Installing 'jq'...'" -ForegroundColor Cyan
+  try
+  {
+    choco install jq -y | Out-Null
+    Write-Host "jq installed correctly" -ForegroundColor Green
+  }
+  catch 
+  {
+    if (-not (PromptContinue($currentProgram))) { exit }
+  }
+}
+
 
 # Install oh-my-posh
 function InstallOhMyPosh{
